@@ -1,0 +1,271 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+body {}
+
+html {}
+
+/*전체레이아웃*/
+
+.wrap {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*상단영역*/
+.header {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: #90ee90;
+    z-index: 999;
+}
+
+.h_logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 100px;
+    line-height: 100px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.gnb {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+}
+
+.mainmenu {
+    position: absolute;
+    right: 20px;
+    top: -60px;
+    display: inline-block;
+    width: 800px;
+    height: 60px;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.mainmenu>li {
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    font-size: 18px;
+}
+
+.mainmenu>li>a {
+    display: block;
+    line-height: 60px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.sub_wrap {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: #fff;
+    border-bottom: firebrick solid 3px;
+}
+
+.submenu {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    width: 800px;
+    font-size: 0;
+    display: none;
+}
+
+.submenu li {
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    font-size: 16px;
+}
+
+.submenu li a {
+    display: block;
+    line-height: 40px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.mainmenu>li:hover>a {
+    background: crimson;
+}
+
+.submenu a:hover {
+    background: crimson;
+}
+
+.gnb:hover .submenu {
+    display: block;
+}
+
+/*비주얼영역*/
+.visual {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 300px;
+    background: orange;
+    overflow: hidden;
+}
+
+/*슬라이더*/
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {}
+
+.box {
+    width: 100%;
+    height: 100%;
+}
+
+.red {
+    background: #f08080;
+}
+
+.blue {
+    background: #add8e6;
+}
+
+.yellow {
+    background: #fffacd;
+}
+
+.swiper-pagination-bullet {
+	background: #fff;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background: #333;
+	transition: background 0.5s;
+}
+
+/*보드영역*/
+.board {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    background: #e6e6fa
+}
+
+.notice,.gallery,.quick {
+	position: relative;
+	display: block;
+	float: left;
+	height: 200px;
+}
+
+.notice {
+	width: 33.33%;
+	background: rgba(0,0,0,0.1);
+}
+
+.gallery {
+	width: 33.33%;
+	background: rgba(0,0,0,0.2);
+}
+
+.quick {
+	width: 33.34%;
+	background: rgba(0,0,0,0.3);
+}
+
+/*하단영역*/
+.footer {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.f_left,.f_right {
+	position: relative;
+	display: block;
+	height: 100px;
+}
+
+.f_left {
+	width: 87.5%;
+	background: #f0fff0;
+	float: left;
+}
+
+.f_menu,.copy {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 50%;
+	text-align: center;
+	line-height: 50px;
+	text-transform: capitalize;
+}
+
+.f_menu {
+	background: rgba(0,0,0,0.1);
+}
+
+.copy {
+	background: rgba(0,0,0,0.2);
+}
+
+.f_right {
+	width: 12.5%;
+	background: #f0e68c;
+	float: right;
+}
+
+.fmy {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 100px;
+	text-transform: capitalize;
+}
